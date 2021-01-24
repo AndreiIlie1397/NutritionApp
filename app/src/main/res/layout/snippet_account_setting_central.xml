@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    tools:context=".Account.AccountSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+
+        <TextView
+            android:id="@+id/change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/profile_image"
+            android:text="Actualizeaza Fotografia"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="20dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <EditText
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Nume"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textCapWords"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/day"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:text="Zi"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:nextFocusDown="@+id/month"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/month"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/day"
+            android:text="Luna"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat"
+            android:textSize="20dp"
+            android:nextFocusDown="@+id/year"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/year"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/month"
+            android:text="An"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat" />
+</RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <EditText
+            android:id="@+id/text_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Greutate "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/text_weight"
+            android:text="  Kg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <EditText
+            android:id="@+id/text_height"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Inaltime "
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/text_height"
+            android:text="  cm"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <RadioGroup
+            android:id="@+id/group_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bt_male"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="Masculin"
+                android:text="Masculin"
+                android:checked="true"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/bt_female"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="Feminin"
+                android:text="Feminin"
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative8"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/relative7"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <TextView
+            android:id="@+id/text_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel de activitate fizica"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+        android:id="@+id/relative6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_activity"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+
+        <RadioGroup
+            android:id="@+id/group_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_bt_sedentar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_sedentar"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio_bt_putin_activ"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_putinactiv"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio_bt_moderat_activ"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_moderatactiv"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio_bt_foarte_activ"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_foarteactiv"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio_bt_extrem_activ"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_border_extremactiv"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size"
+        android:layout_below="@id/relative8"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittxt_circle_bg">
+
+        <TextView
+            android:id="@+id/parola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Schimba parola"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

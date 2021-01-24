@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Nutrition App</string>
+
+    <string name="nutrition_app">Bine ai venit!</string>
+    <string name="nutrition_login">Intra in cont</string>
+    <string name="nutrition_register">Creaza cont</string>
+
+    <string name="users">Users</string>
+    <string name="name">name</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="activity">activity</string>
+    <string name="profile_image">profile_image</string>
+    <string name="calorii">calorii</string>
+    <string name="gender">gender</string>
+    <string name="age">age</string>
+
+    <string name="food">Food</string>
+    <string name="food_key">food_key</string>
+    <string name="image">image</string>
+    <string name="jurnal">Jurnal</string>
+    <string name="aliment">aliment</string>
+    <string name="total">total</string>
+
+    <string name="breakfast">breakfast</string>
+    <string name="lunch">lunch</string>
+    <string name="dinner">dinner</string>
+    <string name="snack1">snack1</string>
+    <string name="snack2">snack2</string>
+    <string name="snack3">snack3</string>
+    <string name="gramaj">gramaj</string>
+
+    <string name="carbohidrati">carbohidrati</string>
+    <string name="totalCarbohidrati">totalCarbohidrati</string>
+    <string name="grasimi">grasimi</string>
+    <string name="totalGrasimi">totalGrasimi</string>
+    <string name="proteine">proteine</string>
+    <string name="totalProteine">totalProteine</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

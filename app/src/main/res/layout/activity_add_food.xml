@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFoodActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative1">
+
+            <include layout="@layout/snippet_addfood_top_toolbar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="50dp"
+            >
+
+            <Button
+                android:id="@+id/breakfast"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/breakfast"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/lunch"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lunch"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/dinner"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dinner"
+                android:stateListAnimator="@null" />
+
+            <TextView
+                android:id="@+id/lunch1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunch"
+                android:layout_centerHorizontal="true"
+                android:text="Pranz"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/breakfast1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/breakfast"
+                android:text="Mic dejun"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dinner1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dinner"
+                android:layout_alignParentRight="true"
+                android:text="Cina"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative2"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="50dp">
+
+            <Button
+                android:id="@+id/snack1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/snack1"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/snack2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/snack2"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/snack3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/snack3"
+                android:stateListAnimator="@null" />
+
+            <TextView
+                android:id="@+id/snack5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/snack2"
+                android:layout_centerHorizontal="true"
+                android:text="Gustare d.-amiaza"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/snack4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/snack1"
+                android:layout_alignParentLeft="true"
+                android:text="Gustare de dimineata"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/snack6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/snack3"
+                android:layout_alignParentRight="true"
+                android:text="Gustare de seara"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
